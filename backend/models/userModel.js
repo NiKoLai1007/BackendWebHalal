@@ -31,8 +31,8 @@ const userSchema = new mongoose.Schema({
     role: {
       type: String,
       required: true,
-      default: 'Client',  // Set the default value to 'Client' (as a string)
-      enum: ['Admin', 'Supplier', 'Vendor', 'Client']
+      default: 'Admin',  // Set the default value to 'Client' (as a string)
+      enum: ['Admin', 'SuperAdmin']
     }
   }, { timestamps: true });
   
